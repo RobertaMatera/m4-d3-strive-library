@@ -5,6 +5,7 @@ import WarningSign from './Components/WarningSign';
 import MyBadge from './Components/MyBadge';
 import SingleBook from './Components/SingleBook';
 import books from './Components/Data/books.json';
+import BookList from './Components/BookList';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <MyNav></MyNav>
       <WarningSign text="This is a danger alert!" />
       <MyBadge text="MY BUDGE" color="info"/>
-      <SingleBook book={books[1]} />
+      {/* <SingleBook book={books[10]} /> */}
+      <BookList books={books}/>
     </div>
   );
 }
