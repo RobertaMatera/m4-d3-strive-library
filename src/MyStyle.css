@@ -1,0 +1,17 @@
+.background {
+  background-color: #a1bdbe56;
+}
+
+.jumbotron {
+  background-image: url("https://t4.ftcdn.net/jpg/01/62/68/21/360_F_162682117_szCd1KqcSF7xHJGQEDVcBnKB3Z0T8X9r.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+  background-color: var(--white);
+}
+
+.jumbotron > div {
+  border-radius: 20px;
+  padding: 40px 0 40px 0;
+  background-color: rgba(255, 255, 255, 0.459);
+}

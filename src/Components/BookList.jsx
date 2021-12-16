@@ -14,10 +14,10 @@ class BookList extends React.Component {
 
     render() {
         return (
-            <Container fluid>
+            <Container fluid className="my-3">
                 <Row className="d-flex justify-content-center">
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Search</Form.Label>
+                    <Form.Group controlId="formSearch">
+                        <Form.Label> <b>SEARCH</b> </Form.Label>
                         <Form.Control
                             type="text"
                             placeholder="Search here"
