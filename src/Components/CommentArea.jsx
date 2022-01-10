@@ -17,7 +17,7 @@ class CommentArea extends React.Component {
             let response = await fetch(`https://striveschool-api.herokuapp.com/api/comments/${this.props.asin}`, 
             {
                 headers: {
-                    Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJiNDA1YmNhMTZlYjAwMTU2Yzk3NmUiLCJpYXQiOjE2Mzk2NjE2NjAsImV4cCI6MTY0MDg3MTI2MH0.vSdQ-UKH0peErJ2ypiqx8YtUZvRoJmDXsmNZ7-feTpE"
+                    Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWIwYjA2MDRjZmY1ZjAwMTU5MGJkYjIiLCJpYXQiOjE2NDE4MjIzOTcsImV4cCI6MTY0MzAzMTk5N30.wU2A-cS0_YhexhiialDI85BVXuu-0viuF1jaSDR1-ec"
                 }
             })
             console.log('RESPONSE', response)
