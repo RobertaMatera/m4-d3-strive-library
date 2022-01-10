@@ -1,12 +1,15 @@
 import "./App.css";
 import "./MyStyle.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import books from "./Components/Data/books.json";
+
 import MyNav from "./Components/MyNav";
 import Welcome from "./Components/Welcome";
 import WarningSign from "./Components/WarningSign";
 import MyBadge from "./Components/MyBadge";
-import books from "./Components/Data/books.json";
 import BookList from "./Components/BookList";
+import CommentArea from "./Components/CommentArea";
 import MyFooter from "./MyFooter";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -33,18 +36,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-
-      <Container fluid>
-        <Row className="mt-5">
-          <Col xs={12} md={10} className="px-0">
-            <BookList books={books} />
-          </Col>
-          <Col xs={12} md={2} className="px-0">
-            <h4 className="my-auto">Comments Area</h4>
-          </Col>
-        </Row>
-      </Container>
-
+      <BookList books={books} />
       <MyFooter />
     </div>
   );
