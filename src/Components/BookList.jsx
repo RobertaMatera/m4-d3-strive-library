@@ -59,7 +59,7 @@ class BookList extends React.Component {
                 ))}
             </Row>
           </Col>
-          <Col md={2}>
+          <Col md={2} className="d-flex flex-column align-items-start px-0">
             <h4 className="my-4">Comments</h4>
             <CommentArea asin={this.state.selectedBook} />
           </Col>
