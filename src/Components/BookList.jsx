@@ -53,7 +53,7 @@ const BookList = ({books}) => {
                     book={book}
                     selectedBook={bookState.selectedBook}
                     changeSelectedBook={(asin) =>
-                      setBookState({ ...bookState,selectedBook: asin })
+                      setBookState({ ...bookState, selectedBook: asin })
                     }
                   />
                 </Col>
