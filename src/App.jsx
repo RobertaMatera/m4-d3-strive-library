@@ -9,7 +9,6 @@ import Welcome from "./Components/Welcome";
 import WarningSign from "./Components/WarningSign";
 import MyBadge from "./Components/MyBadge";
 import BookList from "./Components/BookList";
-import CommentArea from "./Components/CommentArea";
 import MyFooter from "./MyFooter";
 import { Container, Row, Col } from "react-bootstrap";
 
