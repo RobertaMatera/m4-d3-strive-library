@@ -61,7 +61,6 @@ const BookList = ({books}) => {
           </Row>
         </Col>
         <Col md={2} className="d-flex flex-column align-items-start px-0">
-          <h4 className="my-4">Comments</h4>
           <CommentArea asin={bookState.selectedBook} />
         </Col>
       </Row>

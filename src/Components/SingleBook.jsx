@@ -13,7 +13,8 @@ const SingleBook = ({changeSelectedBook, selectedBook, book}) => {
             border:
               selectedBook === book.asin
                 ? "3px solid red"
-                : "1px solid #93D5D9",
+                : "none",
+            background:"#F7F7F7"
           }}
         >
           <Card.Img

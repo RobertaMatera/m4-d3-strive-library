@@ -21,9 +21,9 @@ const deleteComment = async (asin) => {
 }
 
 const SingleComment = ({ comment }) => (
-    <ListGroup.Item className="d-flex flex-column">
+    <ListGroup.Item className="d-flex flex-column mt-3" style={{ border: "none", background: "#F7F7F7", borderRadius: "25px" }}>
         {comment.comment}
-        <Button variant="danger" className="ml-2" onClick={() => deleteComment(comment._id)}>Delete</Button>
+        <Button variant="danger" style={{ borderRadius: "25px" }} className="my-1 mx-5" onClick={() => deleteComment(comment._id)}>Delete</Button>
     </ListGroup.Item>
 )
 
