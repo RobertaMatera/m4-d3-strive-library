@@ -12,7 +12,7 @@ import BookList from "./Components/BookList";
 import MyFooter from "./MyFooter";
 import { Container, Row, Col } from "react-bootstrap";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Container fluid className="px-0">
