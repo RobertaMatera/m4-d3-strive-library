@@ -6,10 +6,8 @@ import books from "./Components/Data/books.json";
 
 import MyNav from "./Components/MyNav";
 import Welcome from "./Components/Welcome";
-import WarningSign from "./Components/WarningSign";
-import MyBadge from "./Components/MyBadge";
 import BookList from "./Components/BookList";
-import MyFooter from "./MyFooter";
+import MyFooter from "./Components/MyFooter";
 import { Container, Row, Col } from "react-bootstrap";
 
 const App = () => {
@@ -18,20 +16,12 @@ const App = () => {
       <Container fluid className="px-0">
         <Row>
           <Col className="px-0">
-            <MyNav></MyNav>
+            <MyNav />
           </Col>
         </Row>
         <Row>
           <Col className="px-0">
             <Welcome />
-          </Col>
-        </Row>
-      </Container>
-      <Container fluid>
-        <Row>
-          <Col className="px-0">
-            <WarningSign text="This is a danger alert!" />
-            <MyBadge text="MY BUDGE" color="info" />
           </Col>
         </Row>
       </Container>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useState, useEffect, useRef } from "react"; 
+import { useState, useEffect } from "react"; 
 
 import CommentList from "./CommentList";
 import AddComment from "./AddComment";

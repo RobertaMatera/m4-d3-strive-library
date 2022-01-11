@@ -12,7 +12,7 @@ const SingleBook = ({changeSelectedBook, selectedBook, book}) => {
             width: "18rem",
             border:
               selectedBook === book.asin
-                ? "3px solid red"
+                ? "3px solid #17A2B8"
                 : "none",
             background:"#F7F7F7"
           }}

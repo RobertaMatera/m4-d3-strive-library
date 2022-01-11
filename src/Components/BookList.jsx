@@ -60,7 +60,7 @@ const BookList = ({books}) => {
               ))}
           </Row>
         </Col>
-        <Col md={2} className="d-flex flex-column align-items-start px-0">
+        <Col md={2} className="d-flex flex-column align-items-center align-items-md-start px-0 mb-3">
           <CommentArea asin={bookState.selectedBook} />
         </Col>
       </Row>

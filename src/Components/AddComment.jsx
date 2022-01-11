@@ -45,10 +45,10 @@ const AddComment = ({ asin }) => {
   };
 
   return (
-    <div>
+    <div className="mt-5 pt-5">
       <Form onSubmit={(e) => sendComment(e)}>
         <Form.Group>
-          <Form.Label>ADD A COMMENT</Form.Label>
+          <Form.Label> <b>ADD A COMMENT</b> </Form.Label>
           <Form.Control
             type="text"
             placeholder="Add comment here"
@@ -62,7 +62,7 @@ const AddComment = ({ asin }) => {
           />
         </Form.Group>
         <Form.Group>
-          <Form.Label>Rating</Form.Label>
+          <Form.Label> <b>RATING</b> </Form.Label>
           <Form.Control
             as="select"
             value={comment.rate}
