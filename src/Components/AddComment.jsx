@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -9,14 +9,14 @@ const AddComment = ({ asin }) => {
     rate: 1,
     elementId: null,
   });
-  
+
   useEffect(() => {
     setComment(
       {...comment,
       elementId: asin,
     }
     )
-  }, [asin]) */
+  }, [asin]) 
 
   const sendComment = async (e) => {
     e.preventDefault();
