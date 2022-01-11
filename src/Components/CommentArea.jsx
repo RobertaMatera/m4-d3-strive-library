@@ -1,9 +1,28 @@
 import React from "react";
+
+/* import { useState, useEffect } from "react"; */
+
 import CommentList from "./CommentList";
 import AddComment from "./AddComment";
 import Loading from "./Loading";
 import Error from "./Error";
 
+/* const CommentArea = ( {asin} ) => {
+  const [commentAreaState, setcommentAreaState] = useState({
+    comments: [],
+    isLoading: false,
+    isError: false,
+  });
+
+  return (
+    <div>
+      {commentAreaState.isLoading && <Loading />}
+      {commentAreaState.isError && <Error />}
+      <AddComment asin={asin} />
+      <CommentList commentsToShow={commentAreaState.comments} />
+    </div>
+  );
+}; */
 class CommentArea extends React.Component {
   state = {
     comments: [],
