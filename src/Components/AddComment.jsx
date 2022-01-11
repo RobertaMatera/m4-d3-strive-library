@@ -9,24 +9,7 @@ const AddComment = ({ asin }) => {
     rate: 1,
     elementId: null,
   });
-  /*   state = {
-    comment: {
-      comment: "",
-      rate: 1,
-      elementId: null,
-    },
-  };
-
-  componentDidUpdate(prevProps) {
-    if (prevProps.asin !== this.props.asin) {
-      this.setState({
-        comment: {
-          ...this.state.comment,
-          elementId: this.props.asin,
-        },
-      });
-    } */
-  /* 
+  
   useEffect(() => {
     setComment(
       {...comment,
