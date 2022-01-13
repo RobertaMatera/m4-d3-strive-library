@@ -17,7 +17,7 @@ export default class Home extends Component {
         </Container>
         <Container fluid>
           <Row>
-            <Col>
+            <Col className="px-0">
               <BookList books={books} />
             </Col>
           </Row>

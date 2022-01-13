@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 const Registration = () => {
@@ -12,8 +12,8 @@ const Registration = () => {
   });
 
   const handleUserInput = (e) => {
-    setInputForm({ ...inputForm, firstName: e });
-    console.log(e);
+    inputForm({ ...inputForm, firstName: e, lastName: e});
+    console.log(setInputForm({ ...inputForm, firstName: e, lastName: e}));
   };
 
   /*  const nameValidation = (fieldName, fieldValue) => {
@@ -66,11 +66,16 @@ const Registration = () => {
 
   } */
 
+  const handleSubmit = () => {
+      console.log ("here I'll validate my form")
+  }
+
+
   return (
     <Container className="my-5">
       <Row>
         <Col md={6} className="offset-md-3 my-5">
-          <Form>
+          <Form onSubmit={handleSubmit()}>
             <Row>
               <Col>
                 <Form.Group controlId="formBasicFirstName">
@@ -92,6 +97,7 @@ const Registration = () => {
                   <Form.Control
                     type="text"
                     placeholder="Enter your Last Name"
+                    onChange={(e) => handleUserInput(e.currentTarget.value)}
                   />
                 </Form.Group>
               </Col>

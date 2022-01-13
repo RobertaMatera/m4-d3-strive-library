@@ -29,7 +29,7 @@ const App = () => {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col className="px-0">
             <MyFooter />
           </Col>
         </Row>
