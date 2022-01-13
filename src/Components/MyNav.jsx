@@ -1,10 +1,11 @@
 import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 const MyNav = () => {
+  const location = useLocation();
   return (
     <>
       <Navbar className="background">
@@ -20,15 +21,19 @@ const MyNav = () => {
             Strive Library
           </Navbar.Brand>
           <Nav className="ml-auto">
-          <Link to="/">
-              <div className="nav-link mr-2 black-text">
+            <Link to="/">
+              <div
+                className={`nav-link mr-2 black-text ${
+                  location.pathname === "/" ? "active" : " "
+                }`}
+              >
                 <b>Home</b>
-              </div >
+              </div>
             </Link>
             <Link to="/register">
-              <div className="nav-link bg-btn black-text light-bg">
+              <div className={`nav-link bg-btn black-text ${location.pathname === "/register" ? "active" : " "}`}>
                 <b>Register</b>
-              </div >
+              </div>
             </Link>
           </Nav>
         </Container>
