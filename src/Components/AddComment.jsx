@@ -80,7 +80,7 @@ const AddComment = ({ asin }) => {
             <option>5</option>
           </Form.Control>
         </Form.Group>
-        <Button variant="primary" type="submit" style={{ borderRadius: "25px", background: "#17A2B8", border:"none" }} className="py-2 px-3">
+        <Button variant="primary" type="submit" className="py-2 px-3 bg-welcome bg-btn">
           Submit
         </Button>
       </Form>

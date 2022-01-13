@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MyNav from "./Components/MyNav";
 import Home from "./Components/Home";
+import Registration from "./Components/Registration";
 import NotFound from "./Components/NotFound";
 import MyFooter from "./Components/MyFooter";
 import { Container, Row, Col } from "react-bootstrap";
@@ -21,8 +22,7 @@ const App = () => {
               <MyNav />
               <Routes>
                 <Route path="/" element={<Home />} />
-                {/* 
-                <Route path="/register" element={<Register />} ></Route> */}
+                <Route path="/register" element={<Registration />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>

@@ -21,12 +21,12 @@ const MyNav = () => {
           </Navbar.Brand>
           <Nav className="ml-auto">
           <Link to="/">
-              <div className="nav-link mr-2" style={{ color:"black" }}>
+              <div className="nav-link mr-2 black-text">
                 <b>Home</b>
               </div >
             </Link>
             <Link to="/register">
-              <div className="nav-link" style={{ borderRadius: "25px", background: "#A8D7DB", border:"none", color:"black" }}>
+              <div className="nav-link bg-btn black-text light-bg">
                 <b>Register</b>
               </div >
             </Link>

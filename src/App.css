@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.black-text {
+  color: black !important;
+}
+
+.bg-btn {
+  border-radius: 25px !important;
+  border: none !important;
+}
+
+.light-bg {
+  background-color: #a8d7db;
+}
+
+.bg-welcome {
+  background-color: #17a2b8 !important;
+}
