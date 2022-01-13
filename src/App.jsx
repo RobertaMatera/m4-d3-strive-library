@@ -1,12 +1,13 @@
 import "./App.css";
 import "./MyStyle.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import books from "./Components/Data/books.json";
+/* import books from "./Components/Data/books.json"; */
 
 import MyNav from "./Components/MyNav";
-import Welcome from "./Components/Welcome";
-import BookList from "./Components/BookList";
+import Home from "./Components/Home";
+import NotFound from "./Components/NotFound";
 import MyFooter from "./Components/MyFooter";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -16,19 +17,25 @@ const App = () => {
       <Container fluid className="px-0">
         <Row>
           <Col className="px-0">
-            <MyNav />
+            <BrowserRouter>
+              <MyNav />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                {/* 
+                <Route path="/register" element={<Register />} ></Route> */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </BrowserRouter>
           </Col>
         </Row>
         <Row>
-          <Col className="px-0">
-            <Welcome />
+          <Col>
+            <MyFooter />
           </Col>
         </Row>
       </Container>
-      <BookList books={books} />
-      <MyFooter />
     </div>
   );
-}
+};
 
 export default App;
