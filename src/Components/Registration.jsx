@@ -1,7 +1,71 @@
 import React from "react";
+import { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 const Registration = () => {
+  const [inputForm, setInputForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  const handleUserInput = (e) => {
+    setInputForm({ ...inputForm, firstName: e });
+    console.log(e);
+  };
+
+  /*  const nameValidation = (fieldName, fieldValue) => {
+    if (fieldValue.trim() === "") {
+      return `${fieldName} is required`;
+    }
+    if (/[^a-zA-Z -]/.test(fieldValue)) {
+      return "Invalid characters";
+    }
+    if (fieldValue.trim().length < 2) {
+      return `${fieldName} needs to be at least three characters`;
+    }
+    return null;
+  }
+
+  const emailValidation = (email) => {
+    if (
+      /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+        email
+      )
+    ) {
+      return null;
+    }
+    if (email.trim() === "") {
+      return "Email is required";
+    }
+    return "Please enter a valid email";
+  }
+
+  const passwordValidation = (password) => {
+    if (password.lenght < 8) {
+      return `${password} needs to be at least eight characters`;
+    }
+    return false;
+  }
+
+  const confirmPasswordValidation = (confirmPassword) => {
+      if (confirmPassword !== password) {
+          return "Should have the same value as Password"
+      }
+      return false;
+  }
+
+  const validate = {
+      firstName: name => nameValidation('first name', name),
+      lastName: name => nameValidation('Last Name', name),
+      email: emailValidation,
+      password: passwordValidation,
+      confirmPassword: confirmPasswordValidation
+
+  } */
+
   return (
     <Container className="my-5">
       <Row>
@@ -16,6 +80,7 @@ const Registration = () => {
                   <Form.Control
                     type="text"
                     placeholder="Enter your First Name"
+                    onChange={(e) => handleUserInput(e.currentTarget.value)}
                   />
                 </Form.Group>
               </Col>
